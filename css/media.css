@@ -1,0 +1,60 @@
+/**********************************************/
+/* BELOW 1344px (smaller desktop) */
+/**********************************************/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.5rem;
+  }
+
+  html {
+    font-size: 58%;
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 52%;
+  }
+
+  .testimonial-section {
+    align-self: center;
+  }
+
+  .testimonials-section-written {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .grid {
+    gap: 2.6rem;
+  }
+
+  .hero {
+    gap: 4.6rem;
+  }
+
+  .section-meals {
+    padding: 3.4rem;
+  }
+
+  .section-testimonials {
+    padding: 3.4rem;
+  }
+
+  .section-pricing {
+    padding: 3.4rem;
+  }
+
+  .testimonial-client {
+    flex-direction: row;
+  }
+}

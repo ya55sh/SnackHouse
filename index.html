@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
 
     <title>FoodHouse</title>
   </head>
@@ -314,70 +315,120 @@
     <section class="section-pricing">
       <div class="container">
         <span class="subheading">Pricing</span>
-        <h2 class="heading-secondary">Let'see if you can manage some</h2>
+        <h2 class="heading-secondary">
+          Light food that is light on your pocket
+        </h2>
+      </div>
 
-        <div class="price-card-container grid grid--2--cols">
-          <div class="price-card-one-month">
-            <span class="price-card-detail-heading subheading">Starter</span>
-            <div class="price-card-figures">
-              <span class="price-card-amount">$450</span><br />
-              per month. That's just $15 per day
-            </div>
-            <div class="price-card-perks">
-              <div class="price-card-perk">
-                <ion-icon
-                  class="price-card-perk-icon"
-                  name="checkmark-outline"
-                ></ion-icon>
-                Free delivery
-              </div>
-              <div class="price-card-perk">
-                <ion-icon
-                  class="price-card-perk-icon"
-                  name="checkmark-outline"
-                ></ion-icon>
-                1 snack per day
-              </div>
-              <div class="price-card-perk">
-                <ion-icon
-                  class="price-card-perk-icon"
-                  name="checkmark-outline"
-                ></ion-icon>
-                Order between 10-12 am
-              </div>
-            </div>
-            <a href="#" class="price-card-btn btn btn--full">Start Munching</a>
+      <div class="container grid grid--2--cols">
+        <div class="pricing-plan starter-plan">
+          <header class="plan-header">
+            <div class="plan-name">Starter</div>
+            <p class="plan-price"><span>$</span>450</p>
+            <p class="plan-text">per month. That's just $15 per snack!</p>
+          </header>
+          <ul class="list">
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>1 snack per day</span>
+            </li>
+            <li class="list-item">
+              <ion-icon
+                class="list-icon list-icon-cross"
+                name="close-outline"
+              ></ion-icon>
+              <span>Additional snack twice a week</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Order times between 10am to 12am</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Free delivery</span>
+            </li>
+          </ul>
+          <div class="plan-sign-up">
+            <a href="#" class="btn btn--full">Start Munching</a>
           </div>
-          <div class="price-card-three-month">
-            <span class="price-card-detail-heading subheading">Monthly</span>
-            <div class="price-card-figures">
-              <span class="price-card-amount">$1300</span><br />
-              per month. That's just $433 per month
+        </div>
+        <div class="pricing-plan complete-plan">
+          <header class="plan-header">
+            <div class="plan-name">Complete</div>
+            <p class="plan-price"><span>$</span>1300</p>
+            <p class="plan-text">per month. That's just $433.33 every month!</p>
+          </header>
+          <ul class="list">
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>1 snack per day</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Additional snack twice a week</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Order times between 10am to 2pm</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Free delivery</span>
+            </li>
+          </ul>
+          <div class="plan-sign-up">
+            <a href="#" class="btn btn--full">Start Munching</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="feature feature-heading center--text">
+          Prices are inclusive of all taxes. No hidden charges.
+        </div>
+
+        <div class="feautes grid grid--3--cols features">
+          <div class="feature feature-1">
+            <div class="feature-icon">
+              <ion-icon name="heart-outline"></ion-icon>
             </div>
-            <div class="price-card-perks">
-              <div class="price-card-perk">
-                <ion-icon
-                  class="price-card-perk-icon"
-                  name="checkmark-outline"
-                ></ion-icon>
-                Free delivery
-              </div>
-              <div class="price-card-perk">
-                <ion-icon
-                  class="price-card-perk-icon"
-                  name="checkmark-outline"
-                ></ion-icon>
-                1 snack per day + occasional complimentary snacks
-              </div>
-              <div class="price-card-perk">
-                <ion-icon
-                  class="price-card-perk-icon"
-                  name="checkmark-outline"
-                ></ion-icon>
-                Order between 10-2 am
-              </div>
+            <div class="feature-title">
+              <span>Missed Breakfast?</span>
             </div>
-            <a href="#" class="price-card-btn btn btn--full">Start Munching</a>
+            <div class="feature-text">
+              <span
+                >Never go hungry till lunch. We've got you covered with a
+                healthy snack.</span
+              >
+            </div>
+          </div>
+          <div class="feature feature-2">
+            <div class="feature-icon">
+              <ion-icon name="pin-outline"></ion-icon>
+            </div>
+            <div class="feature-title">
+              <span>Delivery Everywhere</span>
+            </div>
+            <div class="feature-text">
+              <span
+                >Not at your regular place? Just prompt us your temporary
+                address and we'll deliver you there.</span
+              >
+            </div>
+          </div>
+          <div class="feature feature-3">
+            <div class="feature-icon">
+              <ion-icon name="leaf-outline"></ion-icon>
+            </div>
+            <div class="feature-title">
+              <span>Zero Waste</span>
+            </div>
+            <div class="feature-text">
+              <span
+                >We promote organic packing materials so you dont have to worry
+                about plastic waste.</span
+              >
+            </div>
           </div>
         </div>
       </div>

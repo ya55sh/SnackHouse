@@ -50,6 +50,10 @@ strong {
   align-items: center;
 }
 
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
@@ -137,6 +141,26 @@ strong {
   border-bottom: 1px solid transparent;
 }
 
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #b16234;
+}
+
 .margin-right-sm {
   margin-right: 2rem !important;
 }
@@ -203,7 +227,7 @@ strong {
 
 .section-hero {
   background-color: rgb(253, 246, 233);
-  padding: 4.6 0 9.6rem 0;
+  padding: 4.6rem 0 9.6rem 0;
 }
 
 .hero {
@@ -468,47 +492,113 @@ strong {
   padding: 8.4rem 0;
 }
 
-.price-card-container {
+.pricing-plan {
+  background-color: #fff5e8;
+  border-radius: 12px;
+  padding: 3.4rem;
+  width: 80%;
+}
+
+.starter-plan {
+  justify-self: end;
+}
+
+.plan-header {
   text-align: center;
+  margin-bottom: 4.8rem;
 }
 
-.price-card-detail-heading {
-  margin-bottom: 0.01rem;
+.plan-name {
+  color: #b16234;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  margin-bottom: 3.2rem;
 }
 
-.price-card-amount {
-  font-size: 6.4rem;
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
 }
 
-.price-card-one-month,
-.price-card-three-month {
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  letter-spacing: 0.8px;
+  color: #333;
+}
+
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.complete-plan {
+  background-color: #fce6db;
+  position: relative;
+  overflow: hidden;
+}
+
+.complete-plan::after {
+  content: "Best value";
+  text-transform: uppercase;
+  position: absolute;
+
+  top: 8%;
+  right: -9%;
+
+  padding: 0.5rem 5.4rem;
+  background-color: rgb(255, 115, 0);
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+
+  transform: rotate(45deg);
+}
+
+.list-icon-cross {
+  color: rgb(207, 56, 106);
+}
+
+/**********************************************/
+/* PRICING SECTION */
+/**********************************************/
+
+.feature-heading {
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  color: #222;
+  margin-bottom: 3.2rem;
+}
+
+.feature-icon {
+  font-size: 3.8rem;
+  color: #e27a3e;
+  margin-bottom: 1.2rem;
+}
+
+.feature-title {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: #222;
+  margin-bottom: 1.2rem;
+}
+
+.feature-text {
   font-size: 1.8rem;
   font-weight: 500;
-  line-height: 1.5;
-}
-
-.price-card-figures {
-  margin-bottom: 3.6rem;
-}
-
-.price-card-perks {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: flex-start;
-  justify-content: center;
-
-  margin: 0 auto 3.2rem auto;
-}
-
-.price-card-perk {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.price-card-perk-icon {
-  font-size: 2.6rem;
-  color: #e27a3e;
+  letter-spacing: 0.6px;
+  line-height: 1.4;
 }
