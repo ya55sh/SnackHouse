@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="icon" href="/assests/icons/favicon-sh-32x32.png" />
+    <link
+      rel="apple-touch-icon"
+      href="/assests/icons/apple-touch-icon-sh.png"
+    />
+    <link rel="android" href="/assests/icons/android-chrome-sh-512x512.png" />
+    <link rel="android" href="/assests/icons/android-chrome-sh-192x192.png" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -12,19 +21,33 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
 
-    <title>FoodHouse</title>
+    <script defer src="scripts/action.js"></script>
+
+    <title>SnackHouse</title>
   </head>
   <body>
     <header class="header">
-      <span class="logo">FOOD <span>HOUSE</span></span>
+      <a href="#">
+        <span class="logo">FOOD <span>HOUSE</span></span>
+      </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Section1</a></li>
-          <li><a class="main-nav-link" href="#">Section2</a></li>
-          <li><a class="main-nav-link" href="#">Section3</a></li>
-          <li><a class="main-nav-link" href="#">Section4</a></li>
+          <li>
+            <a class="main-nav-link" href="#how-it-works">How it works</a>
+          </li>
+          <li><a class="main-nav-link" href="#snacks">Snacks</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+          <li><a class="main-nav-link" href="#">Try for free</a></li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
 
     <section class="section-hero">
@@ -39,7 +62,7 @@
             style.
           </p>
           <a href="#" class="btn btn--full margin-right-sm">Get your snacks</a>
-          <a href="#" class="btn btn--outline">Learn more &darr;</a>
+          <a href="#how-it-works" class="btn btn--outline">Learn more &darr;</a>
           <div class="delivered-meals">
             <div class="delivered-imgs">
               <img src="assests/customers/hacker.png" alt="hacker" />
@@ -78,10 +101,10 @@
       </div>
     </section>
 
-    <section class="section-how">
+    <section class="section-how" id="how-it-works">
       <div class="container">
         <span class="subheading">How it works</span>
-        <h2 class="heading-secondary">Finger licking food in 3 simple steps</h2>
+        <h2 class="heading-secondary">Finger licking bite in 3 simple steps</h2>
       </div>
 
       <div class="container grid grid--2--cols grid--center--v">
@@ -138,7 +161,7 @@
       </div>
     </section>
 
-    <section class="section-meals">
+    <section class="section-snacks" id="snacks">
       <div class="container center--text">
         <span class="subheading">Snacks</span>
         <h2 class="heading-secondary">Varieties to suit your mood</h2>
@@ -147,7 +170,7 @@
       <div class="container grid grid--3--cols margin-bottom-md">
         <div class="snack">
           <img
-            src="assests/meals/snack-burger-2.jpg"
+            src="assests/snacks/snack-burger-2.webp"
             class="snack-img"
             alt="burger"
           />
@@ -172,7 +195,7 @@
 
         <div class="snack">
           <img
-            src="assests/meals/snack-sandwich.jpg"
+            src="assests/snacks/snack-sandwich.webp"
             class="snack-img"
             alt="burger"
           />
@@ -197,7 +220,7 @@
 
         <div class="snack">
           <img
-            src="assests/meals/snack-fries-2.jpg"
+            src="assests/snacks/snack-fries-2.webp"
             class="snack-img"
             alt="burger"
           />
@@ -226,7 +249,7 @@
       </div>
     </section>
 
-    <section class="section-testimonials">
+    <section class="section-testimonials" id="testimonials">
       <div class="container-testimonials">
         <div class="testimonial-header">
           <h2 class="subheading">Testimonials</h2>
@@ -237,7 +260,7 @@
             <div class="testimonial-client">
               <img
                 class="testimonial-client-img"
-                src="assests/gallery/testimonial-client-1.jpg"
+                src="assests/gallery/testimonial-client-1.webp"
                 alt="person"
               />
               <div class="testimonial-client-message">
@@ -253,7 +276,7 @@
             <div class="testimonial-client">
               <img
                 class="testimonial-client-img"
-                src="assests/gallery/testimonial-client-4.jpg"
+                src="assests/gallery/testimonial-client-4.webp"
                 alt="person"
               />
               <div class="testimonial-client-message">
@@ -270,7 +293,7 @@
             <div class="testimonial-client">
               <img
                 class="testimonial-client-img"
-                src="assests/gallery/testimonial-client-3.jpg"
+                src="assests/gallery/testimonial-client-3.webp"
                 alt="person"
               />
               <div class="testimonial-client-message">
@@ -287,7 +310,7 @@
             <div class="testimonial-client">
               <img
                 class="testimonial-client-img"
-                src="assests/gallery/testimonial-client-2.jpg"
+                src="assests/gallery/testimonial-client-2.webp"
                 alt="person"
               />
               <div class="testimonial-client-message">
@@ -304,7 +327,7 @@
           </div>
           <div class="testimonial-section-collage">
             <img
-              src="assests/gallery/testimonial-collage.jpg"
+              src="assests/gallery/testimonial-collage.webp"
               alt="image with faces of different people"
             />
           </div>
@@ -312,7 +335,7 @@
       </div>
     </section>
 
-    <section class="section-pricing">
+    <section class="section-pricing" id="pricing">
       <div class="container">
         <span class="subheading">Pricing</span>
         <h2 class="heading-secondary">
